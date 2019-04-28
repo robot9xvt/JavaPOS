@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JposEntries PUBLIC "-//JavaPOS//DTD//EN" "jpos/res/jcl.dtd">
+<JposEntries>
+
+  
+	<JposEntry logicalName="POSPrinter_windows_usb_printer_class">
+		<creation factoryClass="com.starmicronics.starjavapos.ServiceInstanceFactory" serviceClass="com.starmicronics.starjavapos.POSPrinterService" />
+		<vendor name="Star Micronics" url="www.star-m.jp/eng/index.htm" />
+		<jpos category="POSPrinter" version="1.13" />
+		<product description="Thermal receipt printer" name="Star Micronics POSPrinter controller" url="www.star-m.jp/eng/index.htm"/>
+		<prop name="model" type="String" value="BSC10" />
+		<prop name="portName" type="String" value="usbprn:Star BSC10" />
+		<prop name="portSettings" type="String" value="" />
+		<prop name="ioTimeoutMillis" type="Integer" value="5000" />
+		<prop name="emulation" type="String" value="ESC/POS" />
+		<prop name="doCheckedBlockPrinting" type="Boolean" value="True" />
+				<!-- support Vietnamese TCVN-3 -->
+		<prop name="codePage" type="Integer" value="30" />
+		<prop name="useNVBitImage" type="Boolean" value="False" />
+	 </JposEntry>
+	 
+	<!-- 1- iPOS printer -->
+	<JposEntry logicalName="BTP-U80II">
+		<creation factoryClass="com.jpos.ByJposServiceInstanceFactory" serviceClass="com.jpos.BasePrinterService"/>
+		<vendor name="SNBC Co., Ltd." url="http://www.newbeiyang.com"/>
+		<jpos category="POSPrinter" version="1.14"/>
+		<product description="POS Printer" name="BTP-U80II" url="http://www.newbeiyang.com"/>
+				
+		<!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+		<prop name="OptionRecLineSpacing" type="String" value="25"/>
+		<prop name="TST2SideMode" type="String" value="Disable"/>
+		<prop name="OptionRightMargin" type="String" value="0"/>
+		<prop name="OptionDefaultCharacterSet" type="String" value="65001"/>
+		<prop name="OptionDefaultRecLetterQuality" type="String" value="false"/>
+		<prop name="Asynchronous Block Status Timeout" type="String" value="200"/>
+		<prop name="Print Status Wait Time" type="String" value="30000"/>
+		<prop name="UsbDevID" type="String" value="736"/>
+		<prop name="OptionLeftMargin" type="String" value="0"/>
+		<prop name="OptionRecLineChars" type="String" value="42"/>
+		<prop name="OptionDefaultBmpHalftoneProcCtrs" type="String" value="0"/>
+		<prop name="OptionBarcodeWidth" type="String" value="0"/>
+		<prop name="TraceImmediate" type="String" value="false"/>
+		<prop name="Parity" type="String" value="None"/>
+		<prop name="StopBits" type="String" value="1"/>
+		<prop name="Description" type="String" value="SNBC Printer Service"/>
+		<prop name="PrinterName" type="String" value="BTP-U80"/>
+		<prop name="Heartbeat Poll Time" type="String" value="1000"/>
+		<prop name="OptionNotEmpty" type="String" value="true"/>
+		<prop name="OptionDefaultBmpHalftoneProcThreshold" type="String" value="0"/>
+		<prop name="OptionRateOfTally" type="String" value="0"/>
+		<prop name="OptionDefaultCode128CodeSet" type="String" value="Code C"/>
+		<prop name="OptionDefaultBitmapPrintTimes" type="String" value="one bitmap pixel per printer dot"/>
+		<prop name="OptionDefaultCutFormat" type="String" value="all in partial cut"/>
+		<prop name="IOPort" type="String" value="1"/>
+		<prop name="OptionPresentStartLength" type="String" value=""/>
+		<prop name="OptionDefaultBmpHalftoneProcMethod" type="String" value="1"/>
+		<prop name="TraceMaxDays" type="String" value=""/>
+		<prop name="MapMode" type="String" value="PTR_MM_DOTS"/>
+		<prop name="TraceFile" type="String" value=""/>
+		<prop name="TraceMaxSize" type="String" value=""/>
+		<prop name="PDF417 Width" type="String" value="9"/>
+		<prop name="DataBits" type="String" value="8"/>
+		<prop name="EthIPAddr" type="String" value=""/>
+		<prop name="Version" type="String" value="2"/>
+		<prop name="Model" type="String" value="BTP-U80"/>
+		<prop name="OptionDefaultBmpHalftoneProcBrt" type="String" value="0"/>
+		<prop name="OptionCrCommand" type="String" value="Disable"/>
+		<prop name="OptionAsyncBlockSize" type="String" value="10"/>
+		<prop name="OptionPresent" type="String" value="Disable"/>
+		<prop name="MarkFeed" type="String" value="false"/>
+		<prop name="TraceLevel" type="String" value=""/>
+		<prop name="IOType" type="String" value="USB"/>
+		<prop name="BaudRate" type="String" value="9600"/>
+		<prop name="TraceDir" type="String" value=""/>
+		<prop name="OptionPresenterModeSet" type="String" value="1"/>
+		<prop name="OptionLineWidth" type="String" value="80"/>
+		<prop name="OptionPresenterWaitTime" type="String" value="3"/>
+	</JposEntry>
+
+</JposEntries>
